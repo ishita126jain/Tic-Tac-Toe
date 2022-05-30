@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     int [][]winningStates={{0,1,2},{3,4,5},{6,7,8}};
     int []gameState={-1,-1,-1,-1,-1,-1,-1,-1,-1};
     public void load(View view){
-
+           int win, lose;
             ImageView v = (ImageView) view;
             int tag = Integer.parseInt(v.getTag().toString());
             imageClick=gameState[tag];
